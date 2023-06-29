@@ -40,7 +40,11 @@ class TodoRepositoryImpl extends TodosRepository {
       return const Todos(values: []);
     }
 
-    return Todos.fromJson(jsonDecode(content));
+    if (content != 'Could not get data...') {
+      return Todos.fromJson(jsonDecode(content));
+    } else {
+      return const Todos();
+    }
   }
 
   @override
