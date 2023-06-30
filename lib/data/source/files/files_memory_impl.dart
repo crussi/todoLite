@@ -4,7 +4,7 @@ import 'package:path_provider/path_provider.dart';
 
 import './files.dart';
 
-class FilesMemoryImpl extends Files {
+class FileLocal extends Files {
   final Map<String, String> _files = {};
 
   @override

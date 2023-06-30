@@ -7,8 +7,8 @@ import '../../domain/model/todos.dart';
 import '../../domain/repository/todos.dart';
 import '../source/files/files.dart';
 
-class TodoFileRepo extends TodosRepository {
-  TodoFileRepo(this.files);
+class TodosRepo extends TodosRepository {
+  TodosRepo(this.files);
   final Files files;
   late final String path = 'Todos.json';
 
